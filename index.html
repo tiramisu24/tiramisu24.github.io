@@ -13,6 +13,7 @@
   <header/>
   <section>
     <body>
+      <main>
         <h2> Tiramisu </h2>
         <ul>
           <li>
@@ -24,11 +25,16 @@
           <li>
             <a href = "#Directions">Directions<a/>
           </li>
+
         <h2><a name = "Description"/>Description </h2>
           <p> here is the paragraph </p>
           <nav>
+          <li>
             <a href ="https://en.wikipedia.org/wiki/Tiramisu"> Tiramisu </a>
+          </li>
+          <li>
             <img src = "http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2011/2/4/2/RX-FNM_030111-Sugar-Fix-005_s4x3.jpg.rend.sniipadlarge.jpeg" alt = "tiramisu-pic" />
+          </li>
           <nav/>
         <h2><a name = "Ingredients"/>Ingredients </h2>
           <ul class="ingredients-list">
@@ -36,11 +42,15 @@
             <li> Cream </li>
           </ul>
         <h2><a name = "Directions"/> Directions </h2>
-            <ol>
+            <ol class = "directions">
               <li> Mix </li>
               <li> Layer </li>
             </ol>
             <section id="reviews">
+            </main>
+
+      <aside class="reviews">
+
         <h2>Reviews</h2>
           <form id="review-form" action="/reviews" method="post">
             <label for="name">Name</label>
@@ -73,6 +83,7 @@
 
             <input type="submit" value="Submit Review">
           </form>
+        </aside>
       </section>
     </body>
   </section>

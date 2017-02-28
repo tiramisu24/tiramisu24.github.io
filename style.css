@@ -1,5 +1,30 @@
+* {
+  font-style: oblique;
+}
+option, input[type = "submit"],input[type = "radio"] {
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(stars.png);
+    vertical-align: bottom;
+}
+input[type = "submit"]:last-child{
+  background-color: gold;
+  opacity: 0.5
+}
+input[type = "submit"]:last-child:hover {
+  opacity: 1;
+}
+
 body {
   font-family: "Arial, sans-serif";
+  width: 900px;
+  margin: 0 auto
 }
 h1 {
   font-size :38px;
@@ -10,16 +35,49 @@ h2 {
 .ingredients-list{
   list-style :square;
 }
+.ingredients-list >li{
+  margin: 15px 0px;
+
+}
 
 ol{
   list-style: georgian;
 }
 
-nav > img {
-  width :100px;
+li > img {
+  width :200px;
 }
 
 ul * a{
   color: inherit;
   text-decoration: none;
+}
+.directions > li:nth-child(even) {
+  background-color: grey;
+  margin: 15px 0px;
+}
+
+
+h2 + div[id = "_review"]   {
+  border-top: 1px solid black;
+}
+
+nav > li {
+  float:left;
+  background-color: pink;
+  padding: 10px;
+  width: 200px;
+}
+main {
+  float:left;
+  width: 66%;
+}
+aside{
+
+  width: 32%;
+  margin-left: 10px;
+}
+
+aside,section{
+  display: inline-block;
 }
